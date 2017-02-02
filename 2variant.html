@@ -1,49 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-<title>ddd</title>
+ <meta charset="windows-1251">
+ <title>ddd</title>
+
+ <script type="text/javascript">
+
+  let objectsss = {
+
+   test   : 'fwefwe',
+   test1  : '32dsfsdx',
+   test2  : 'zzzzzzzzz',
+   test3  : 'bbbbbbbbbb',
+   test4  : 'ffffffff',
+   test111: 'rrrrrrrrrr',
+   wefwe  : 333
+
+  };
+
+  let func = ( obj ) => {
+
+   let length_obj = 0,
+    bbb = document.getElementById( 'bbb' ),
+    ccc = document.getElementById( 'ccc' );
+
+   for ( let s in obj )
+   {
+
+    if ( obj.hasOwnProperty(s) )
+    {
+
+     length_obj++;
+     bbb.innerHTML += obj[s] + '<br>';
+
+    }
+
+   }
+
+   return ccc.innerHTML = length_obj;
+
+  };
+
+  document.addEventListener( 'DOMContentLoaded', function() {
+
+   func(objectsss);
+
+  });
+
+ </script>
+
 </head>
 <body>
 
-<b>Значения объекта:</b>
-<div id="bbb"></div>
-<br>
-<b>Количество методов объекта:</b>
-<div id="ccc"></div>
+ <b>Значения объекта:</b>
+ <div id="bbb"></div>
+ <br>
+ <b>Количество методов объекта:</b>
+ <div id="ccc"></div>
 
-<script>
- 
- let objectsss = {
- 
-  test: 'fwefwe',  
-  test1: '32dsfsdx',
-  test2: 'zzzzzzzzz',
-  test3: 'bbbbbbbbbb',
-  test4: 'ffffffff',
-  test111: 'rrrrrrrrrr'
-  
- }
-
- let func = ( obj ) => {
- 
-  let length_obj = 0,
-   bbb = document.getElementById('bbb'),
-   ccc = document.getElementById('ccc');
-  
-  for (let s in obj) {
-
-   length_obj++;
-   
-   bbb.innerHTML += obj[s] + '<br>';
-   
-  }
-  
-  return ccc.innerHTML = length_obj;
- 
- }
-
- func(objectsss);
- 
-</script>
 </body>
 </html>
