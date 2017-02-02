@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ddd</title>
+</head>
+<body>
+
+<b>Значения объекта:</b>
+<div id="bbb"></div>
+<br>
+<b>Количество методов объекта:</b>
+<div id="ccc"></div>
+
+<script>
+
+ "use strict";
+ 
+ var objectsss = {
+ 
+  test: 'fwefwe',  
+  test1: '32dsfsdx',
+  test2: 'zzzzzzzzz',
+  test3: 'bbbbbbbbbb',
+  test4: 'ffffffff',
+  test111: 'rrrrrrrrrr'
+  
+ }
+
+ var func = ( obj ) => {
+ 
+  var length_obj = 0,
+   bbb = document.getElementById('bbb'),
+   ccc = document.getElementById('ccc');
+  
+  for (var s in obj) {
+
+   length_obj++;
+   
+   bbb.innerHTML += obj[s] + '<br>';
+   
+  }
+  
+  return ccc.innerHTML = length_obj;
+ 
+ }
+
+ func(objectsss);
+ 
+</script>
+</body>
+</html>
